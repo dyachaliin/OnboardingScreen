@@ -10,10 +10,22 @@
 		5DFA950928D5ED5C00BC59F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */; };
 		5DFA950B28D5ED5C00BC59F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */; };
 		5DFA950D28D5ED5C00BC59F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950C28D5ED5C00BC59F0 /* ViewController.swift */; };
-		5DFA951028D5ED5C00BC59F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA950E28D5ED5C00BC59F0 /* Main.storyboard */; };
 		5DFA951328D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA951128D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld */; };
 		5DFA951528D5ED5D00BC59F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA951428D5ED5D00BC59F0 /* Assets.xcassets */; };
 		5DFA951828D5ED5D00BC59F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA951628D5ED5D00BC59F0 /* LaunchScreen.storyboard */; };
+		5DFA952728D60C7B00BC59F0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA952628D60C7B00BC59F0 /* Coordinator.swift */; };
+		5DFA952928D60EE900BC59F0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA952828D60EE900BC59F0 /* MainCoordinator.swift */; };
+		5DFA952D28D6127000BC59F0 /* FirstScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA952B28D6127000BC59F0 /* FirstScreenVC.swift */; };
+		5DFA952E28D6127000BC59F0 /* FirstScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA952C28D6127000BC59F0 /* FirstScreenVC.xib */; };
+		5DFA953928D616B900BC59F0 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953028D616B900BC59F0 /* Inter-Light.ttf */; };
+		5DFA953A28D616B900BC59F0 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953128D616B900BC59F0 /* Inter-Thin.ttf */; };
+		5DFA953B28D616B900BC59F0 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953228D616B900BC59F0 /* Inter-Bold.ttf */; };
+		5DFA953C28D616B900BC59F0 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953328D616B900BC59F0 /* Inter-Black.ttf */; };
+		5DFA953D28D616B900BC59F0 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953428D616B900BC59F0 /* Inter-Medium.ttf */; };
+		5DFA953E28D616B900BC59F0 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953528D616B900BC59F0 /* Inter-ExtraLight.ttf */; };
+		5DFA953F28D616B900BC59F0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953628D616B900BC59F0 /* Inter-Regular.ttf */; };
+		5DFA954028D616B900BC59F0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953728D616B900BC59F0 /* Inter-SemiBold.ttf */; };
+		5DFA954128D616B900BC59F0 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953828D616B900BC59F0 /* Inter-ExtraBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +33,23 @@
 		5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5DFA950C28D5ED5C00BC59F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5DFA950F28D5ED5C00BC59F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DFA951228D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnboardingScreen.xcdatamodel; sourceTree = "<group>"; };
 		5DFA951428D5ED5D00BC59F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DFA951728D5ED5D00BC59F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DFA951928D5ED5D00BC59F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DFA952628D60C7B00BC59F0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5DFA952828D60EE900BC59F0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		5DFA952B28D6127000BC59F0 /* FirstScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenVC.swift; sourceTree = "<group>"; };
+		5DFA952C28D6127000BC59F0 /* FirstScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstScreenVC.xib; sourceTree = "<group>"; };
+		5DFA953028D616B900BC59F0 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		5DFA953128D616B900BC59F0 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		5DFA953228D616B900BC59F0 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		5DFA953328D616B900BC59F0 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		5DFA953428D616B900BC59F0 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		5DFA953528D616B900BC59F0 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		5DFA953628D616B900BC59F0 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		5DFA953728D616B900BC59F0 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		5DFA953828D616B900BC59F0 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +82,76 @@
 		5DFA950728D5ED5C00BC59F0 /* OnboardingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */,
-				5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */,
+				5DFA952228D5FAB200BC59F0 /* Application */,
+				5DFA951F28D5F89A00BC59F0 /* Coordinator */,
+				5DFA952428D5FEFB00BC59F0 /* Code */,
+				5DFA952528D60B7400BC59F0 /* Resources */,
 				5DFA950C28D5ED5C00BC59F0 /* ViewController.swift */,
-				5DFA950E28D5ED5C00BC59F0 /* Main.storyboard */,
-				5DFA951428D5ED5D00BC59F0 /* Assets.xcassets */,
 				5DFA951628D5ED5D00BC59F0 /* LaunchScreen.storyboard */,
-				5DFA951928D5ED5D00BC59F0 /* Info.plist */,
 				5DFA951128D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld */,
 			);
 			path = OnboardingScreen;
+			sourceTree = "<group>";
+		};
+		5DFA951F28D5F89A00BC59F0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA952628D60C7B00BC59F0 /* Coordinator.swift */,
+				5DFA952828D60EE900BC59F0 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		5DFA952228D5FAB200BC59F0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA951928D5ED5D00BC59F0 /* Info.plist */,
+				5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */,
+				5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5DFA952428D5FEFB00BC59F0 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA952A28D6124800BC59F0 /* FirstScreen */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		5DFA952528D60B7400BC59F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA952F28D6169100BC59F0 /* Fonts */,
+				5DFA951428D5ED5D00BC59F0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5DFA952A28D6124800BC59F0 /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA952B28D6127000BC59F0 /* FirstScreenVC.swift */,
+				5DFA952C28D6127000BC59F0 /* FirstScreenVC.xib */,
+			);
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		5DFA952F28D6169100BC59F0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA953328D616B900BC59F0 /* Inter-Black.ttf */,
+				5DFA953228D616B900BC59F0 /* Inter-Bold.ttf */,
+				5DFA953828D616B900BC59F0 /* Inter-ExtraBold.ttf */,
+				5DFA953528D616B900BC59F0 /* Inter-ExtraLight.ttf */,
+				5DFA953028D616B900BC59F0 /* Inter-Light.ttf */,
+				5DFA953428D616B900BC59F0 /* Inter-Medium.ttf */,
+				5DFA953628D616B900BC59F0 /* Inter-Regular.ttf */,
+				5DFA953728D616B900BC59F0 /* Inter-SemiBold.ttf */,
+				5DFA953128D616B900BC59F0 /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +212,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DFA953B28D616B900BC59F0 /* Inter-Bold.ttf in Resources */,
 				5DFA951828D5ED5D00BC59F0 /* LaunchScreen.storyboard in Resources */,
 				5DFA951528D5ED5D00BC59F0 /* Assets.xcassets in Resources */,
-				5DFA951028D5ED5C00BC59F0 /* Main.storyboard in Resources */,
+				5DFA954028D616B900BC59F0 /* Inter-SemiBold.ttf in Resources */,
+				5DFA953928D616B900BC59F0 /* Inter-Light.ttf in Resources */,
+				5DFA953D28D616B900BC59F0 /* Inter-Medium.ttf in Resources */,
+				5DFA953A28D616B900BC59F0 /* Inter-Thin.ttf in Resources */,
+				5DFA953F28D616B900BC59F0 /* Inter-Regular.ttf in Resources */,
+				5DFA952E28D6127000BC59F0 /* FirstScreenVC.xib in Resources */,
+				5DFA953E28D616B900BC59F0 /* Inter-ExtraLight.ttf in Resources */,
+				5DFA953C28D616B900BC59F0 /* Inter-Black.ttf in Resources */,
+				5DFA954128D616B900BC59F0 /* Inter-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DFA951328D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld in Sources */,
+				5DFA952928D60EE900BC59F0 /* MainCoordinator.swift in Sources */,
 				5DFA950D28D5ED5C00BC59F0 /* ViewController.swift in Sources */,
+				5DFA952728D60C7B00BC59F0 /* Coordinator.swift in Sources */,
+				5DFA952D28D6127000BC59F0 /* FirstScreenVC.swift in Sources */,
 				5DFA950928D5ED5C00BC59F0 /* AppDelegate.swift in Sources */,
 				5DFA950B28D5ED5C00BC59F0 /* SceneDelegate.swift in Sources */,
 			);
@@ -151,14 +247,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5DFA950E28D5ED5C00BC59F0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DFA950F28D5ED5C00BC59F0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5DFA951628D5ED5D00BC59F0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,10 +380,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OnboardingScreen/Info.plist;
+				INFOPLIST_FILE = OnboardingScreen/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +406,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OnboardingScreen/Info.plist;
+				INFOPLIST_FILE = OnboardingScreen/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
