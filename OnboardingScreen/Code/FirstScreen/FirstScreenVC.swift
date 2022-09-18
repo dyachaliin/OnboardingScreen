@@ -24,5 +24,9 @@ class FirstScreenVC: UIViewController, Coordinating {
     private func setupView() {
         startButton.layer.cornerRadius = 10
     }
-
+    
+    @IBAction func startBtnPressed(_ sender: UIButton) {
+        coordinator?.eventOccured(with: .firstBtnTapped)
+    }
+    
 }

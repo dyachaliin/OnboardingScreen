@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondScreenVC" customModule="OnboardingScreen" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="NFk-y7-JEM" id="VZR-cE-IdA"/>
+                <outlet property="nextButton" destination="t2I-8z-Jzu" id="l0x-r1-LVg"/>
+                <outlet property="pageControl" destination="VQ1-6V-x82" id="EUk-ou-XP6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NFk-y7-JEM">
+                    <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                    <color key="backgroundColor" name="primaryBackground"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Q8r-um-j6j">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2I-8z-Jzu">
+                    <rect key="frame" x="43.5" y="790" width="327" height="52"/>
+                    <color key="backgroundColor" name="buttonColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="327" id="hur-0g-Jvz" userLabel="width = 327"/>
+                        <constraint firstAttribute="height" constant="52" id="nTt-bn-VSP" userLabel="height = 52"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="nextBtnTapped:" destination="-1" eventType="touchUpInside" id="nQl-9z-ytB"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="VQ1-6V-x82">
+                    <rect key="frame" x="149" y="736" width="116" height="26"/>
+                    <color key="pageIndicatorTintColor" name="pagesTintColor"/>
+                    <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="primaryBackground"/>
+            <constraints>
+                <constraint firstItem="NFk-y7-JEM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="25a-W7-u7f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NFk-y7-JEM" secondAttribute="trailing" id="6bo-Py-vIy"/>
+                <constraint firstItem="VQ1-6V-x82" firstAttribute="top" secondItem="NFk-y7-JEM" secondAttribute="bottom" id="7lD-PO-xlW"/>
+                <constraint firstItem="t2I-8z-Jzu" firstAttribute="top" secondItem="VQ1-6V-x82" secondAttribute="bottom" constant="28" id="DoF-ud-uXQ"/>
+                <constraint firstItem="t2I-8z-Jzu" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DrV-2g-SDh"/>
+                <constraint firstItem="VQ1-6V-x82" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bsu-xI-eMS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="t2I-8z-Jzu" secondAttribute="bottom" constant="20" id="dnK-lY-agW"/>
+                <constraint firstItem="NFk-y7-JEM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jNQ-92-lBF"/>
+                <constraint firstItem="NFk-y7-JEM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="o3h-bu-4Ya"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="114"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="buttonColor">
+            <color red="0.93725490196078431" green="0.53725490196078429" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pagesTintColor">
+            <color red="0.50588235294117645" green="0.55686274509803924" blue="0.66274509803921566" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryBackground">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5DFA950928D5ED5C00BC59F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */; };
 		5DFA950B28D5ED5C00BC59F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */; };
-		5DFA950D28D5ED5C00BC59F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950C28D5ED5C00BC59F0 /* ViewController.swift */; };
 		5DFA951328D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA951128D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld */; };
 		5DFA951528D5ED5D00BC59F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA951428D5ED5D00BC59F0 /* Assets.xcassets */; };
 		5DFA951828D5ED5D00BC59F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA951628D5ED5D00BC59F0 /* LaunchScreen.storyboard */; };
@@ -26,13 +25,19 @@
 		5DFA953F28D616B900BC59F0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953628D616B900BC59F0 /* Inter-Regular.ttf */; };
 		5DFA954028D616B900BC59F0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953728D616B900BC59F0 /* Inter-SemiBold.ttf */; };
 		5DFA954128D616B900BC59F0 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953828D616B900BC59F0 /* Inter-ExtraBold.ttf */; };
+		5DFA954528D63F2F00BC59F0 /* SecondScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA954328D63F2F00BC59F0 /* SecondScreenVC.swift */; };
+		5DFA954628D63F2F00BC59F0 /* SecondScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA954428D63F2F00BC59F0 /* SecondScreenVC.xib */; };
+		5DFA954828D670D400BC59F0 /* OnboardingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA954728D670D400BC59F0 /* OnboardingFactory.swift */; };
+		5DFA954E28D6792600BC59F0 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA954C28D6792600BC59F0 /* OnboardingCell.swift */; };
+		5DFA954F28D6792600BC59F0 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA954D28D6792600BC59F0 /* OnboardingCell.xib */; };
+		5DFA955128D681E800BC59F0 /* SecondScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA955028D681E700BC59F0 /* SecondScreenPresenter.swift */; };
+		5DFA955528D6836B00BC59F0 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA955428D6836B00BC59F0 /* Collection+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5DFA950528D5ED5C00BC59F0 /* OnboardingScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5DFA950C28D5ED5C00BC59F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5DFA951228D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnboardingScreen.xcdatamodel; sourceTree = "<group>"; };
 		5DFA951428D5ED5D00BC59F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DFA951728D5ED5D00BC59F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +55,13 @@
 		5DFA953628D616B900BC59F0 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		5DFA953728D616B900BC59F0 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		5DFA953828D616B900BC59F0 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5DFA954328D63F2F00BC59F0 /* SecondScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenVC.swift; sourceTree = "<group>"; };
+		5DFA954428D63F2F00BC59F0 /* SecondScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondScreenVC.xib; sourceTree = "<group>"; };
+		5DFA954728D670D400BC59F0 /* OnboardingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFactory.swift; sourceTree = "<group>"; };
+		5DFA954C28D6792600BC59F0 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		5DFA954D28D6792600BC59F0 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
+		5DFA955028D681E700BC59F0 /* SecondScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenPresenter.swift; sourceTree = "<group>"; };
+		5DFA955428D6836B00BC59F0 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +97,8 @@
 				5DFA952228D5FAB200BC59F0 /* Application */,
 				5DFA951F28D5F89A00BC59F0 /* Coordinator */,
 				5DFA952428D5FEFB00BC59F0 /* Code */,
+				5DFA955328D6835200BC59F0 /* Extensions */,
 				5DFA952528D60B7400BC59F0 /* Resources */,
-				5DFA950C28D5ED5C00BC59F0 /* ViewController.swift */,
 				5DFA951628D5ED5D00BC59F0 /* LaunchScreen.storyboard */,
 				5DFA951128D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld */,
 			);
@@ -115,6 +127,7 @@
 		5DFA952428D5FEFB00BC59F0 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				5DFA954228D63F1800BC59F0 /* SecondScreen */,
 				5DFA952A28D6124800BC59F0 /* FirstScreen */,
 			);
 			path = Code;
@@ -152,6 +165,43 @@
 				5DFA953128D616B900BC59F0 /* Inter-Thin.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5DFA954228D63F1800BC59F0 /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA955228D681F800BC59F0 /* OnboardingFactory */,
+				5DFA954928D6779500BC59F0 /* Cell */,
+				5DFA954328D63F2F00BC59F0 /* SecondScreenVC.swift */,
+				5DFA954428D63F2F00BC59F0 /* SecondScreenVC.xib */,
+				5DFA955028D681E700BC59F0 /* SecondScreenPresenter.swift */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		5DFA954928D6779500BC59F0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA954C28D6792600BC59F0 /* OnboardingCell.swift */,
+				5DFA954D28D6792600BC59F0 /* OnboardingCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5DFA955228D681F800BC59F0 /* OnboardingFactory */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA954728D670D400BC59F0 /* OnboardingFactory.swift */,
+			);
+			path = OnboardingFactory;
+			sourceTree = "<group>";
+		};
+		5DFA955328D6835200BC59F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA955428D6836B00BC59F0 /* Collection+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +262,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DFA954F28D6792600BC59F0 /* OnboardingCell.xib in Resources */,
 				5DFA953B28D616B900BC59F0 /* Inter-Bold.ttf in Resources */,
 				5DFA951828D5ED5D00BC59F0 /* LaunchScreen.storyboard in Resources */,
 				5DFA951528D5ED5D00BC59F0 /* Assets.xcassets in Resources */,
+				5DFA954628D63F2F00BC59F0 /* SecondScreenVC.xib in Resources */,
 				5DFA954028D616B900BC59F0 /* Inter-SemiBold.ttf in Resources */,
 				5DFA953928D616B900BC59F0 /* Inter-Light.ttf in Resources */,
 				5DFA953D28D616B900BC59F0 /* Inter-Medium.ttf in Resources */,
@@ -234,13 +286,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DFA955528D6836B00BC59F0 /* Collection+Extension.swift in Sources */,
+				5DFA955128D681E800BC59F0 /* SecondScreenPresenter.swift in Sources */,
 				5DFA951328D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld in Sources */,
 				5DFA952928D60EE900BC59F0 /* MainCoordinator.swift in Sources */,
-				5DFA950D28D5ED5C00BC59F0 /* ViewController.swift in Sources */,
 				5DFA952728D60C7B00BC59F0 /* Coordinator.swift in Sources */,
 				5DFA952D28D6127000BC59F0 /* FirstScreenVC.swift in Sources */,
 				5DFA950928D5ED5C00BC59F0 /* AppDelegate.swift in Sources */,
+				5DFA954E28D6792600BC59F0 /* OnboardingCell.swift in Sources */,
+				5DFA954828D670D400BC59F0 /* OnboardingFactory.swift in Sources */,
 				5DFA950B28D5ED5C00BC59F0 /* SceneDelegate.swift in Sources */,
+				5DFA954528D63F2F00BC59F0 /* SecondScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

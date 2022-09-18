@@ -12,7 +12,16 @@ class MainCoordinator: Coordinator {
     var navigationController: UINavigationController?
     
     func eventOccured(with type: Event) {
-        
+        switch type {
+        case .firstBtnTapped:
+            var vc: UIViewController & Coordinating = SecondScreenVC()
+            vc.coordinator = self
+            navigationController?.present(vc, animated: true)
+        case .secondBtnTapped:
+            break
+        case .thirdBtnTapped:
+            break
+        }
     }
     
     func start() {

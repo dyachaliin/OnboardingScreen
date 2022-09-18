@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Inter-Medium.ttf">
-            <string>Inter-Medium</string>
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -31,11 +31,14 @@
                         <constraint firstAttribute="width" constant="244" id="cvc-bq-oDq"/>
                         <constraint firstAttribute="height" constant="52" id="lzb-TM-sBc"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="16"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Start">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="startBtnPressed:" destination="-1" eventType="touchUpInside" id="bVB-ee-6Ta"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
