@@ -8,17 +8,8 @@
 import Foundation
 import UIKit
 
-enum Event {
-    case firstBtnTapped, secondBtnTapped, thirdBtnTapped
-}
-
 protocol Coordinator {
-    var navigationController: UINavigationController? { get set }
-    
-    func eventOccured(with type: Event)
+    var childCoordinators: [Coordinator] { get set }
+    init(navigationController: UINavigationController)
     func start()
-}
-
-protocol Coordinating {
-    var coordinator: Coordinator? { get set }
 }

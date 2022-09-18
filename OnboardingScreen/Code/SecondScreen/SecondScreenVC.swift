@@ -7,10 +7,14 @@
 
 import UIKit
 
-class SecondScreenVC: UIViewController, Coordinating, SecondScreenVCProtocol {
+public protocol SecondScreenDelegate: AnyObject {
+    func navigateToThirdPage()
+}
+
+class SecondScreenVC: UIViewController, SecondScreenVCProtocol {
  
     var presenter: SecondScreenPresenterProtocol
-    var coordinator: Coordinator?
+    public weak var delegate: SecondScreenDelegate?
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
@@ -20,7 +24,7 @@ class SecondScreenVC: UIViewController, Coordinating, SecondScreenVCProtocol {
         presenter = SecondScreenPresenter()
         super.init(nibName: "SecondScreenVC", bundle: nil)
         presenter.managedView = self
-        modalPresentationStyle = .fullScreen
+        modalPresentationStyle = .overCurrentContext
     }
     
     required init?(coder: NSCoder) {

@@ -9,8 +9,10 @@ import UIKit
 
 protocol SecondScreenVCProtocol: UIViewController {
     var presenter: SecondScreenPresenterProtocol { get set }
+    var delegate: SecondScreenDelegate? { get set }
+//    var coordinator: Coordinator? { get set }
     func updatePage(model: OnboardingItemModel, scrollTo: Int, animate: Bool, scroll: Bool)
-    
+//    func openProgressView()
 }
 
 protocol SecondScreenPresenterProtocol: AnyObject {
@@ -48,7 +50,10 @@ class SecondScreenPresenter: SecondScreenPresenterProtocol {
         if items.count > currentIndex + 1 {
             setCurrentItem(at: currentIndex + 1, animate: true, scroll: true)
         }else{
-  
+            if let managedView = managedView {
+                managedView.delegate?.navigateToThirdPage()
+//                managedView.coordinator?.presentThirdVC()
+            }
         }
     }
     

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D41BFEF28D754370031442C /* ThirdScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41BFEE28D754370031442C /* ThirdScreenPresenter.swift */; };
 		5DFA950928D5ED5C00BC59F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */; };
 		5DFA950B28D5ED5C00BC59F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */; };
 		5DFA951328D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA951128D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld */; };
 		5DFA951528D5ED5D00BC59F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA951428D5ED5D00BC59F0 /* Assets.xcassets */; };
 		5DFA951828D5ED5D00BC59F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA951628D5ED5D00BC59F0 /* LaunchScreen.storyboard */; };
 		5DFA952728D60C7B00BC59F0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA952628D60C7B00BC59F0 /* Coordinator.swift */; };
-		5DFA952928D60EE900BC59F0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA952828D60EE900BC59F0 /* MainCoordinator.swift */; };
 		5DFA952D28D6127000BC59F0 /* FirstScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA952B28D6127000BC59F0 /* FirstScreenVC.swift */; };
 		5DFA952E28D6127000BC59F0 /* FirstScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA952C28D6127000BC59F0 /* FirstScreenVC.xib */; };
 		5DFA953928D616B900BC59F0 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA953028D616B900BC59F0 /* Inter-Light.ttf */; };
@@ -32,9 +32,14 @@
 		5DFA954F28D6792600BC59F0 /* OnboardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA954D28D6792600BC59F0 /* OnboardingCell.xib */; };
 		5DFA955128D681E800BC59F0 /* SecondScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA955028D681E700BC59F0 /* SecondScreenPresenter.swift */; };
 		5DFA955528D6836B00BC59F0 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA955428D6836B00BC59F0 /* Collection+Extension.swift */; };
+		5DFA955B28D728B500BC59F0 /* ThirdScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA955928D728B500BC59F0 /* ThirdScreenVC.swift */; };
+		5DFA955C28D728B500BC59F0 /* ThirdScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DFA955A28D728B500BC59F0 /* ThirdScreenVC.xib */; };
+		5DFA956228D73FCE00BC59F0 /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA956128D73FCE00BC59F0 /* FirstCoordinator.swift */; };
+		5DFA956428D742E000BC59F0 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA956328D742E000BC59F0 /* SecondCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D41BFEE28D754370031442C /* ThirdScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenPresenter.swift; sourceTree = "<group>"; };
 		5DFA950528D5ED5C00BC59F0 /* OnboardingScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +48,6 @@
 		5DFA951728D5ED5D00BC59F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DFA951928D5ED5D00BC59F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DFA952628D60C7B00BC59F0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		5DFA952828D60EE900BC59F0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5DFA952B28D6127000BC59F0 /* FirstScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenVC.swift; sourceTree = "<group>"; };
 		5DFA952C28D6127000BC59F0 /* FirstScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstScreenVC.xib; sourceTree = "<group>"; };
 		5DFA953028D616B900BC59F0 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
@@ -62,6 +66,10 @@
 		5DFA954D28D6792600BC59F0 /* OnboardingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCell.xib; sourceTree = "<group>"; };
 		5DFA955028D681E700BC59F0 /* SecondScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenPresenter.swift; sourceTree = "<group>"; };
 		5DFA955428D6836B00BC59F0 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		5DFA955928D728B500BC59F0 /* ThirdScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenVC.swift; sourceTree = "<group>"; };
+		5DFA955A28D728B500BC59F0 /* ThirdScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdScreenVC.xib; sourceTree = "<group>"; };
+		5DFA956128D73FCE00BC59F0 /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
+		5DFA956328D742E000BC59F0 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				5DFA952628D60C7B00BC59F0 /* Coordinator.swift */,
-				5DFA952828D60EE900BC59F0 /* MainCoordinator.swift */,
+				5DFA956128D73FCE00BC59F0 /* FirstCoordinator.swift */,
+				5DFA956328D742E000BC59F0 /* SecondCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 		5DFA952428D5FEFB00BC59F0 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				5DFA955828D7274D00BC59F0 /* ThirdScreen */,
 				5DFA954228D63F1800BC59F0 /* SecondScreen */,
 				5DFA952A28D6124800BC59F0 /* FirstScreen */,
 			);
@@ -204,6 +214,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5DFA955828D7274D00BC59F0 /* ThirdScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5DFA955928D728B500BC59F0 /* ThirdScreenVC.swift */,
+				5DFA955A28D728B500BC59F0 /* ThirdScreenVC.xib */,
+				5D41BFEE28D754370031442C /* ThirdScreenPresenter.swift */,
+			);
+			path = ThirdScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +292,7 @@
 				5DFA953D28D616B900BC59F0 /* Inter-Medium.ttf in Resources */,
 				5DFA953A28D616B900BC59F0 /* Inter-Thin.ttf in Resources */,
 				5DFA953F28D616B900BC59F0 /* Inter-Regular.ttf in Resources */,
+				5DFA955C28D728B500BC59F0 /* ThirdScreenVC.xib in Resources */,
 				5DFA952E28D6127000BC59F0 /* FirstScreenVC.xib in Resources */,
 				5DFA953E28D616B900BC59F0 /* Inter-ExtraLight.ttf in Resources */,
 				5DFA953C28D616B900BC59F0 /* Inter-Black.ttf in Resources */,
@@ -289,13 +310,16 @@
 				5DFA955528D6836B00BC59F0 /* Collection+Extension.swift in Sources */,
 				5DFA955128D681E800BC59F0 /* SecondScreenPresenter.swift in Sources */,
 				5DFA951328D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld in Sources */,
-				5DFA952928D60EE900BC59F0 /* MainCoordinator.swift in Sources */,
+				5DFA956428D742E000BC59F0 /* SecondCoordinator.swift in Sources */,
 				5DFA952728D60C7B00BC59F0 /* Coordinator.swift in Sources */,
 				5DFA952D28D6127000BC59F0 /* FirstScreenVC.swift in Sources */,
+				5DFA955B28D728B500BC59F0 /* ThirdScreenVC.swift in Sources */,
 				5DFA950928D5ED5C00BC59F0 /* AppDelegate.swift in Sources */,
 				5DFA954E28D6792600BC59F0 /* OnboardingCell.swift in Sources */,
 				5DFA954828D670D400BC59F0 /* OnboardingFactory.swift in Sources */,
 				5DFA950B28D5ED5C00BC59F0 /* SceneDelegate.swift in Sources */,
+				5D41BFEF28D754370031442C /* ThirdScreenPresenter.swift in Sources */,
+				5DFA956228D73FCE00BC59F0 /* FirstCoordinator.swift in Sources */,
 				5DFA954528D63F2F00BC59F0 /* SecondScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

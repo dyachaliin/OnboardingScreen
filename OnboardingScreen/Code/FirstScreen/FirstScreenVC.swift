@@ -7,8 +7,13 @@
 
 import UIKit
 
-class FirstScreenVC: UIViewController, Coordinating {
-    var coordinator: Coordinator?
+protocol FirstScreenDelegate: AnyObject {
+    func navigateToNextPage()
+}
+
+class FirstScreenVC: UIViewController {
+    
+    public weak var delegate: FirstScreenDelegate?
 
     @IBOutlet weak var startButton: UIButton!
     
@@ -26,7 +31,7 @@ class FirstScreenVC: UIViewController, Coordinating {
     }
     
     @IBAction func startBtnPressed(_ sender: UIButton) {
-        coordinator?.eventOccured(with: .firstBtnTapped)
+        self.delegate?.navigateToNextPage()
     }
     
 }
