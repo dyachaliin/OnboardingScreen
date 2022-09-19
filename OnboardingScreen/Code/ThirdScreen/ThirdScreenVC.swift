@@ -17,8 +17,6 @@ class ThirdScreenVC: UIViewController, ThirdScreenVCProtocol {
     var presenter: ThirdScreenPresenterProtocol
     public weak var delegate: SecondScreenDelegate?
     
-    let concurrentQueue = DispatchQueue(label: "com.some.concurrentQueue", attributes: .concurrent)
-    
     required init() {
         presenter = ThirdScreenPresenter()
         super.init(nibName: "ThirdScreenVC", bundle: nil)
@@ -33,6 +31,7 @@ class ThirdScreenVC: UIViewController, ThirdScreenVCProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.createManager()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,6 +43,7 @@ class ThirdScreenVC: UIViewController, ThirdScreenVCProtocol {
         super.viewDidAppear(animated)
         startProgress()
         startTimer()
+        presenter.updateManager()
     }
     
     private func setupView() {

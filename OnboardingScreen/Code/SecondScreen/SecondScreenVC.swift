@@ -65,6 +65,16 @@ class SecondScreenVC: UIViewController, SecondScreenVCProtocol {
         }, completion: nil)
         
     }
+    
+    func presentAlert() {
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: "Thank you for your interest", message: "The functionality is under development", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "OK", style: .default) { action in
+            }
+            alertController.addAction(OKAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
 }
 
 extension SecondScreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

@@ -25,7 +25,6 @@ class FirstCoordinator: Coordinator {
 }
 
 extension FirstCoordinator: FirstScreenDelegate {
-
     func navigateToNextPage() {
        let secondCoordinator = SecondCoordinator(navigationController: navigationController)
        childCoordinators.append(secondCoordinator)

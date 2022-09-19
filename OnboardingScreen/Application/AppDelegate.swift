@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navVC = UINavigationController()
         
         coordinator = FirstCoordinator(navigationController: navVC)
-//        coordinator.navigationController = navVC
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = navVC
