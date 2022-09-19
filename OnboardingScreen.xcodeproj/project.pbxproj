@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D41BFEF28D754370031442C /* ThirdScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41BFEE28D754370031442C /* ThirdScreenPresenter.swift */; };
+		5D41BFF428D8AB0D0031442C /* TimeInterval+Exntension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41BFF328D8AB0D0031442C /* TimeInterval+Exntension.swift */; };
 		5DFA950928D5ED5C00BC59F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */; };
 		5DFA950B28D5ED5C00BC59F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */; };
 		5DFA951328D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DFA951128D5ED5C00BC59F0 /* OnboardingScreen.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		5D41BFEE28D754370031442C /* ThirdScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenPresenter.swift; sourceTree = "<group>"; };
+		5D41BFF328D8AB0D0031442C /* TimeInterval+Exntension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Exntension.swift"; sourceTree = "<group>"; };
 		5DFA950528D5ED5C00BC59F0 /* OnboardingScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFA950828D5ED5C00BC59F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DFA950A28D5ED5C00BC59F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				5DFA955428D6836B00BC59F0 /* Collection+Extension.swift */,
+				5D41BFF328D8AB0D0031442C /* TimeInterval+Exntension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				5D41BFEF28D754370031442C /* ThirdScreenPresenter.swift in Sources */,
 				5DFA956228D73FCE00BC59F0 /* FirstCoordinator.swift in Sources */,
 				5DFA954528D63F2F00BC59F0 /* SecondScreenVC.swift in Sources */,
+				5D41BFF428D8AB0D0031442C /* TimeInterval+Exntension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

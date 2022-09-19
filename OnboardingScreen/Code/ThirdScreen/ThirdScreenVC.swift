@@ -11,15 +11,20 @@ class ThirdScreenVC: UIViewController, ThirdScreenVCProtocol {
     
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var thirdScreenView: UIView!
+    @IBOutlet weak var timeLabel: UILabel!
     
     var presenter: ThirdScreenPresenterProtocol
     public weak var delegate: SecondScreenDelegate?
+    
+    let concurrentQueue = DispatchQueue(label: "com.some.concurrentQueue", attributes: .concurrent)
     
     required init() {
         presenter = ThirdScreenPresenter()
         super.init(nibName: "ThirdScreenVC", bundle: nil)
         presenter.managedView = self
-        modalPresentationStyle = .pageSheet
+        modalPresentationStyle = .overCurrentContext
+        modalTransitionStyle = .crossDissolve
     }
     
     required init?(coder: NSCoder) {
@@ -37,22 +42,44 @@ class ThirdScreenVC: UIViewController, ThirdScreenVCProtocol {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        startProgress()
         startTimer()
     }
     
     private func setupView() {
         continueButton.layer.cornerRadius = 10
+        continueButton.layer.opacity = 0.4
+        thirdScreenView.layer.cornerRadius = 28
     }
     
-    
     private func startTimer() {
-        for sec in 0...60 {
-            DispatchQueue.main.asyncAfter(deadline: .now() + Double(sec) * 0.25) {
-                self.progressView.setProgress(Float(sec)/60, animated: true)
+        var seconds = 0
+        var timer = Timer()
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
+            seconds += 1
+            self.timeLabel.text = TimeInterval(seconds).timeToString()
+            
+            if seconds == 60 {
+                self.continueButton.isEnabled = true
+                self.continueButton.layer.opacity = 1
+                timer.invalidate()
+            }
+        })
+    }
+    
+    private func startProgress() {
+        var timer = Timer()
+        var progress = 0.0
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { _ in
+            progress += 1/1200
+            self.progressView.setProgress(Float(progress), animated: true)
+            if self.progressView.progress == 1 {
+                timer.invalidate()
             }
         }
     }
-    
     
     @IBAction func continueBtnTapped(_ sender: UIButton) {
         self.dismiss(animated: true)
