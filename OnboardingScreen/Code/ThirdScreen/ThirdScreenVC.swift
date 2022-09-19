@@ -29,11 +29,6 @@ class ThirdScreenVC: UIViewController, ThirdScreenVCProtocol {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        presenter.createManager()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupView()

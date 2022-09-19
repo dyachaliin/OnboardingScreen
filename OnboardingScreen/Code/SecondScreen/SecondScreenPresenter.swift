@@ -36,6 +36,7 @@ class SecondScreenPresenter: SecondScreenPresenterProtocol {
     
     init(){
         items = OnboardingFactory().createItems()
+        createManager()
         getManager()
     }
     
@@ -66,6 +67,31 @@ class SecondScreenPresenter: SecondScreenPresenterProtocol {
             let animate = currentIndex == index ? false : true
             currentIndex = index
             managedView.updatePage(model: item, scrollTo: index, animate: animate, scroll: scroll)
+        }
+    }
+    
+    func getAllManagers() -> [ThirdScreenManager] {
+        do {
+            return try context.fetch(ThirdScreenManager.fetchRequest())
+        }
+        catch let error {
+            print(error.localizedDescription)
+            return []
+        }
+    }
+    
+    func createManager() {
+        if getAllManagers().isEmpty {
+            let manager = ThirdScreenManager(context: context)
+            manager.hasBeenDisplayed = false
+            self.manager = manager
+            
+            do {
+              try context.save()
+            }
+            catch let error {
+                print(error.localizedDescription)
+            }
         }
     }
     
